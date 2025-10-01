@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T00"/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-01 09:06:45 PM"/>
+        <attribute name="created" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAxOzA4OjIzOjAwIFBNOzI1MzA="/>
+        <attribute name="edited" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAxOzA5OjA2OjQ1IFBNOzE7MjY0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BP, BK, P, K" type="Integer" array="False" size=""/>
+            <input variable="BP"/>
+            <input variable="BK"/>
+            <if expression="BP%2==0">
+                <then>
+                    <output expression="&quot;Bilangan Pertama Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan Pertama Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="BK%2==0">
+                <then>
+                    <output expression="&quot;Bilangan Kedua Genap&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Bilangan Kedua Ganjil&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="BP == BK">
+                <then>
+                    <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BP &gt; BK">
+                        <then>
+                            <output expression="&quot;Bilangan Pertama lebih Besar&quot;" newline="True"/>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="BK &gt; BP">
+                                <then>
+                                    <output expression="&quot;Bilangan Kedua lebih Besar&quot;" newline="True"/>
+                                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Bilangan Pertama lebih Kecil&quot;" newline="True"/>
+                                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="P" expression="BP + BK"/>
+            <output expression="P" newline="True"/>
+            <assign variable="K" expression="BP*BK"/>
+            <output expression="K" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
