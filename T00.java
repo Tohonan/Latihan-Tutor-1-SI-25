@@ -1,3 +1,5 @@
+// 12S25036 - TOHONAN EMMANUELLE SILABAN
+
 import java.util.*;
 import java.lang.Math;
 
@@ -5,7 +7,7 @@ public class Program {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int bP, bK, p, k;
+        int bP, bK, j, k;
 
         bP = input.nextInt();
         bK = input.nextInt();
@@ -24,20 +26,24 @@ public class Program {
         } else {
             if (bP > bK) {
                 System.out.println("Bilangan Pertama lebih Besar");
-                System.out.println("Berbeda jenis");
             } else {
                 if (bK > bP) {
                     System.out.println("Bilangan Kedua lebih Besar");
-                    System.out.println("Berbeda jenis");
                 } else {
                     System.out.println("Bilangan Pertama lebih Kecil");
-                    System.out.println("Berbeda jenis");
                 }
             }
         }
-        p = bP + bK;
-        System.out.println(p);
-        k = bP * bK;
-        System.out.println(k);
+        if (bP % 2 == 0 && bK % 2 == 0) {
+            j = bK + bP;
+            System.out.println("Jumlah Bilangan =" + j);
+        } else {
+            if (bP % 2 != 1 && bK % 2 != 1 && bP % 2 == 0 && bK % 2 == 0) {
+                k = bP * bK;
+                System.out.println("Perkalian =" + k);
+            } else {
+                System.out.println("Berbeda Jenis");
+            }
+        }
     }
 }
