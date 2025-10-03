@@ -36,13 +36,13 @@ public class Program {
         }
         if (bP % 2 == 0 && bK % 2 == 0) {
             j = bK + bP;
-            System.out.println("Jumlah Bilangan =" + j);
+            System.out.println("Jumlah Bilangan" + j);
         } else {
             if (bP % 2 != 1 && bK % 2 != 1 && bP % 2 == 0 && bK % 2 == 0) {
-                k = bP * bK;
-                System.out.println("Perkalian =" + k);
-            } else {
                 System.out.println("Berbeda Jenis");
+            } else {
+                k = bP * bK;
+                System.out.println("Perkalian" + k);
             }
         }
     }
