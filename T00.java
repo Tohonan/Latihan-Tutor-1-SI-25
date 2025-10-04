@@ -3,7 +3,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class Program {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -21,17 +21,13 @@ public class T00 {
         } else {
             System.out.println("Bilangan Kedua Ganjil");
         }
-        if (bP == bK) {
-            System.out.println("Kedua bilangan sama besar");
+        if (bP > bK) {
+            System.out.println("Bilangan Pertama lebih Besar");
         } else {
-            if (bP > bK) {
-                System.out.println("Bilangan Pertama lebih Besar");
+            if (bK > bP) {
+                System.out.println("Bilangan Kedua lebih Besar");
             } else {
-                if (bK > bP) {
-                    System.out.println("Bilangan Kedua lebih Besar");
-                } else {
-                    System.out.println("Bilangan Pertama lebih Kecil");
-                }
+                System.out.println("Kedua bilangan sama besar");
             }
         }
         if (bP % 2 == 0) {

@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="Asus"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 09:46:43 AM"/>
+        <attribute name="saved" value="2025-10-04 08:35:55 AM"/>
         <attribute name="created" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAxOzA4OjIzOjAwIFBNOzI1MzA="/>
-        <attribute name="edited" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAzOzA5OjQ2OjQzIEFNOzQ7MjY0MQ=="/>
+        <attribute name="edited" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTA0OzA4OjM1OjU1IEFNOzU7MjY0Mw=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -52,19 +52,26 @@
                     </if>
                 </else>
             </if>
-            <if expression="BP%2==0 &amp;&amp; BK%2==0">
+            <if expression="BP %2 == 0">
                 <then>
-                    <assign variable="J" expression="BK + BP"/>
-                    <output expression="&quot;Jumlah Bilangan &quot; &amp; J" newline="True"/>
-                </then>
-                <else>
-                    <if expression="(BP%2!=1 &amp;&amp; BK%2!=1) &amp;&amp; (BP%2==0 &amp;&amp; BK%2==0)">
+                    <if expression="BK %2 == 0">
                         <then>
-                            <assign variable="K" expression="BP * BK"/>
-                            <output expression="&quot;Perkalian &quot; &amp;  K" newline="True"/>
+                            <assign variable="J" expression="BP + BK"/>
+                            <output expression="&quot;Hasil penjumlahan :&quot; &amp; J" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;Berbeda Jenis&quot;" newline="True"/>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="BK %2 != 0">
+                        <then>
+                            <assign variable="K" expression="BP * BK"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; K" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
