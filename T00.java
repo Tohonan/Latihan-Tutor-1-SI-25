@@ -7,40 +7,44 @@ public class Program {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, tambah, kali;
+        int bP, bK, j, k;
 
-        a = input.nextInt();
-        b = input.nextInt();
-        if (a % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap");
+        bP = input.nextInt();
+        bK = input.nextInt();
+        if (bP % 2 == 0) {
+            System.out.println("Bilangan Pertama Genap");
         } else {
-            System.out.println("Bilangan pertama: Ganjil");
+            System.out.println("Bilangan Pertama Ganjil");
         }
-        if (b % 2 == 0) {
-            System.out.println("Bilangan kedua: Genap");
+        if (bK % 2 == 0) {
+            System.out.println("Bilangan Kedua Genap");
         } else {
-            System.out.println("Bilangan kedua: Ganjil");
+            System.out.println("Bilangan Kedua Ganjil");
         }
-        if (a > b) {
-            System.out.println("Bilangan pertama lebih besar");
+        if (bP == bK) {
+            System.out.println("Kedua bilangan sama besar");
         } else {
-            if (a < b) {
-                System.out.println("Bilangan kedua lebih besar");
+            if (bP > bK) {
+                System.out.println("Bilangan Pertama lebih Besar");
             } else {
-                System.out.println("Kedua bilangan sama besar");
+                if (bK > bP) {
+                    System.out.println("Bilangan Kedua lebih Besar");
+                } else {
+                    System.out.println("Bilangan Pertama lebih Kecil");
+                }
             }
         }
-        if (a % 2 == 0) {
-            if (b % 2 == 0) {
-                tambah = a + b;
-                System.out.println("Hasil penjumlahan: " + tambah);
+        if (bP % 2 == 0) {
+            if (bK % 2 == 0) {
+                j = bP + bK;
+                System.out.println("Hasil penjumlahan :" + j);
             } else {
                 System.out.println("Berbeda jenis");
             }
         } else {
-            if (b % 2 != 0) {
-                kali = a * b;
-                System.out.println("Hasil perkalian: " + kali);
+            if (bK % 2 != 0) {
+                k = bP * bK;
+                System.out.println("Hasil perkalian: " + k);
             } else {
                 System.out.println("Berbeda jenis");
             }
