@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="Asus"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-01 09:34:09 PM"/>
+        <attribute name="saved" value="2025-10-03 09:46:43 AM"/>
         <attribute name="created" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAxOzA4OjIzOjAwIFBNOzI1MzA="/>
-        <attribute name="edited" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAxOzA5OjM0OjA5IFBNOzM7MjY1Mg=="/>
+        <attribute name="edited" value="QXN1cztFTU9USU9OTEVTUzsyMDI1LTEwLTAzOzA5OjQ2OjQzIEFNOzQ7MjY0MQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -55,13 +55,13 @@
             <if expression="BP%2==0 &amp;&amp; BK%2==0">
                 <then>
                     <assign variable="J" expression="BK + BP"/>
-                    <output expression="&quot;Jumlah Bilangan =&quot; &amp; J" newline="True"/>
+                    <output expression="&quot;Jumlah Bilangan &quot; &amp; J" newline="True"/>
                 </then>
                 <else>
                     <if expression="(BP%2!=1 &amp;&amp; BK%2!=1) &amp;&amp; (BP%2==0 &amp;&amp; BK%2==0)">
                         <then>
                             <assign variable="K" expression="BP * BK"/>
-                            <output expression="&quot;Perkalian =&quot; &amp; K" newline="True"/>
+                            <output expression="&quot;Perkalian &quot; &amp;  K" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda Jenis&quot;" newline="True"/>
